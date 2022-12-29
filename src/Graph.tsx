@@ -23,13 +23,13 @@ class Graph extends Component<IProps, {}> {
     const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
 
     const schema = {
-      price_abc = 'float',
-      price_def = 'float',
-      ratio = 'float',
+      price_abc : 'float',
+      price_def : 'float',
+      ratio : 'float',
       timestamp: 'date',
-      upper_bound = 'float',
-      lower_bound = 'float',
-      trigger_alert = 'float',
+      upper_bound : 'float',
+      lower_bound : 'float',
+      trigger_alert : 'float',
     };
 
     if (window.perspective && window.perspective.worker()) {
